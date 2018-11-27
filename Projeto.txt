@@ -1,0 +1,62 @@
+GITHUB - CONTROLE DE VERSÃO
+1- New Repositório
+2- Nome do repositório
+3- Descrição
+4- Criar Repositório
+5- Criar Ramificação.
+
+
+Trabalho
+1- Levantamento de requisitos
+Enteder o negócio do cliente para transformar em aplicativo
+Os papeis de cada um na técnica de entrevista
+-Cliente
+-Analista
+O cliente explica o seu negócio para os analista e os mesmos fazem perguntas
+Durante a entrevista, o analista anotou pontos importantes dessa conversa, que serão posteriormente trabalhados a fim de encontrar os requisitos da aplicação. Os pontos são:
+
+    O Cliente possui uma pequena agência de turismo;
+    O seu negócio é baseado em vendas de pacotes de viagem;
+    A divulgação dos pacotes acontece através de panfletos;
+    Os pacotes possuem destinos variados;
+    Todo pacote possui um prazo (data de início e data de término);
+    O controle do prazo do pacote é feito pelo administrador, ativando ou desativando o mesmo;
+    Todo pacote deve possuir um detalhamento completo;
+    O campo para descrição do pacote deve ser um campo aberto para edição;
+    É necessário haver um telefone para contato na tela inicial de listagem;
+    Em cada detalhamento deve haver o telefone e o site da agência;
+    Ao clicar no telefone, o aplicativo deve ser capaz de iniciar uma ligação.
+
+Depois da entrevista é necessário uma reunião enter os analistas para organizar as ideias que foram conversadas na entrevista
+Com todas as ideias organizadas, identificamos dois requisitos:
+
+    Listar pacotes de viagens;
+    Detalhes os Pacotes.
+Listar pacotes(RF1-Requisito funcional)
+
+O primeiro requisito encontrado é o que se refere a listagem de todos os pacotes de viagens na tela do aplicativo para seleção do usuário. Identificamos que essa listagem deve conter as seguintes informações:
+
+    Nome do pacote (destino);
+    Data de início e data de fim;
+    Valor do pacote;
+
+Esse requisito possui uma ação específica, que é o clique em um item da lista. Cada destino deve haver seu detalhamento, que será descrito melhor no segundo requisito levantado.
+Detalhar os pacotes(RF2)
+
+O seguinte requisito é detalhes um pacote específico que foi selecionado pelo usuário através da listagem. O detalhamento desse pacote deve conter as seguintes informações:
+
+    Nome do pacote (destino);
+    Data de início e data de fim;
+    Valor do pacote;
+    Descrição (em um campo de digitação livre para o usuário);
+    Telefone de contato para a agência de viagens;
+    Link para o site da agência.
+
+Após a definição dos requisitos é feito um documneto para o cliente faça a validação no documento de levantamento de requisitos
+Além de documentar a aplicação, o documento de requisitos serve como apoio para os programadores que irão desenvolver a aplicação
+
+Diagrama de casos de uso
+Para esta aplicação, utilizamos o diagrama de casos de uso para facilitar o entendimento do aplicativo mobile a ser desenvolvido, afinal, deste diagrama consegue demonstrar as funcionalidades e os atores envolvido:
+
+Diagrama de classes
+Foi identificado pelos analistas duas classes principais dessa aplicação, que seriam Pacote e Detalhe. Para facilitar o entendimento dos programadores, desenvolvemos também um diagrama de classes, que deixa claro a relação de composição entre Pacote e Detalhe, onde um detalhe só existe dentro de um pacote:
